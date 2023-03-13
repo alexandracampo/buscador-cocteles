@@ -1,6 +1,6 @@
 ![Mojitos](https://www.shutterstock.com/image-vector/cocktails-word-concept-flat-vector-260nw-1730830228.jpg)
 
-# Módulo 2: Ejercicio de evaluación final.
+# Buscador de cócteles.
 
 El ejercicio consiste en desarrollar una aplicación web que contiene un listado de las bebidas y cócteles de todo el mundo, que nos permite des/marcar las bebidas como favoritas
 y guardarlas en local storage.
@@ -44,3 +44,5 @@ Hay que almacenar el listado de favoritos en el localStorage. De esta forma, al 
 - Al final de la lista de favoritos hay un botón para borrarlos todos los favoritos a la vez.
 
 - Maquetación.
+
+##### ©Adalab
