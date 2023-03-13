@@ -52,7 +52,7 @@ function renderList(dataList) {
 // Funcion para construir el <h3> que va dentro de <li>:
 function buildDrinkH3(drinkName) {
     const elementH3 = document.createElement("h3");
-    elementH3.setAttribute("class", "js-item-name");
+    elementH3.setAttribute("class", "js-item-name item-name");
     const textH3 = document.createTextNode(drinkName);
     elementH3.appendChild(textH3);
 
@@ -80,9 +80,9 @@ function buildDrinkLi(drink) {
     elementLi.setAttribute("class", "card-drink");
     elementLi.setAttribute("id", drink.idDrink);
 
-    const elementP = document.createElement("p");
-    elementP.textContent = drink.strCategory;
-    elementLi.appendChild(elementP);
+    //const elementP = document.createElement("p");
+    //elementP.textContent = drink.strCategory;
+    //elementLi.appendChild(elementP);
 
     //meto en variables ambas llamadas a las funciones
     const elementH3 = buildDrinkH3(drink.strDrink);
