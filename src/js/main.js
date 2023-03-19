@@ -171,6 +171,8 @@ function handleClickReset(ev) {
     // Limpiar <ul>
     listResultsFavs.innerHTML = "";
 
+    //quiero que dataList sea el inicial, que aparezcan los Margaritas
+    dataList = [];
     renderList(dataList);
 
 }
