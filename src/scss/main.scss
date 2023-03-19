@@ -8,7 +8,7 @@
  */
 
 $font-family: monospace;
-$background-image: "/assets/images/image-palm.jpg";
+$background-image: "/assets/images/palm1.jpg";
 $color-hard: rgb(29, 99, 99);
 
 * {
@@ -42,11 +42,14 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: rgba(255, 255, 255, 0.8);
+      color: $color-hard;
       margin-top: 1rem;
       margin-bottom: 2rem;
       font-size: 2rem;
       overflow-wrap: break-word;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      padding: 0.5rem;
     }
   }
 
@@ -57,11 +60,15 @@ body {
     flex-direction: column;
     font-family: $font-family;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255);
 
     .label-input {
       font-size: 1.2rem;
       margin: 1rem;
+      color: $color-hard;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      padding: 0.5rem;
     }
 
     .fieldset {
@@ -126,7 +133,7 @@ body {
       padding: 1rem;
       color: $color-hard;
       font-family: $font-family;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.6);
       border-radius: 20px;
 
       .title-list-api {
@@ -211,7 +218,7 @@ body {
       padding: 1rem;
       color: $color-hard;
       font-family: $font-family;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.6);
       border-radius: 20px;
 
       .title-list-fav {
