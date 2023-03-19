@@ -115,8 +115,8 @@ function renderListFavs(dataListFavs) {
         const drinkElement = buildDrinkLi(drinkFav);
 
         // Creamos el botón de eliminar cóctel favorito:
-        const deleteBtn = document.createElement("p");
-        deleteBtn.textContent = "x";
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "X";
         deleteBtn.setAttribute("id", drinkFav.idDrink);
         deleteBtn.setAttribute("class", "btn-delete");
 
