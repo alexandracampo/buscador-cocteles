@@ -170,6 +170,9 @@ function handleClickReset(ev) {
     localStorage.removeItem("favourites");
     // Limpiar <ul>
     listResultsFavs.innerHTML = "";
+
+    renderList(dataList);
+
 }
 
 function handleClickDeleteFav(ev) {

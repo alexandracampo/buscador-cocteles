@@ -111,9 +111,7 @@ body {
         color: white;
 
         &:hover {
-          /* transform: scale(1.5, 1.5);
-          background-color: rgb(21, 235, 163); */
-          transform: rotate(0.5turn);
+          transform: rotate(1turn);
           transition: 0.6s;
           cursor: pointer;
         }
@@ -126,6 +124,7 @@ body {
     grid-template-columns: 1fr;
     margin: 1rem;
     gap: 1rem;
+    width: auto;
 
     .container1 {
       display: grid;
@@ -133,7 +132,7 @@ body {
       padding: 1rem;
       color: $color-hard;
       font-family: $font-family;
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgb(255, 255, 255);
       border-radius: 20px;
 
       .title-list-api {
@@ -152,7 +151,7 @@ body {
 
       .card-drink {
         display: flex;
-        margin: 1.5rem;
+        //margin: 1.5rem;
 
         .item-name {
           display: flex;
@@ -218,8 +217,12 @@ body {
       padding: 1rem;
       color: $color-hard;
       font-family: $font-family;
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgb(255, 255, 255);
       border-radius: 20px;
+
+      @media screen and (min-width: 1024px) {
+        order: -1;
+      }
 
       .title-list-fav {
         display: flex;
@@ -256,6 +259,10 @@ body {
         color: rgb(68, 194, 85);
         padding: 1rem;
       }
+    }
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+      align-items: first baseline;
     }
   }
 }
