@@ -7,7 +7,7 @@ El ejercicio consiste en desarrollar una aplicación web que contiene un listado
 He utilizado una plantilla de proyecto creada con node y gulp, que incluye:
 
 - Un motor de plantillas HTML.
-- reprocesador SASS.
+- preprocesador SASS.
 - Servidor local.
 - Otras funcionalidades preinstaladas y preconfiguradas.
 
