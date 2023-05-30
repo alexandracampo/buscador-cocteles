@@ -1,6 +1,6 @@
 # Buscador de cócteles.
 
-El ejercicio consiste en desarrollar una aplicación web que contiene un listado de las bebidas y cócteles de todo el mundo, que nos permite des/marcar las bebidas como favoritas y guardarlas en local storage.
+Este proyecto consiste en desarrollar una aplicación web que contiene un listado de las bebidas y cócteles de todo el mundo, que nos permite hacer búsquedas y también seleccionar las bebidas como favoritas y guardarlas en local storage.
 
 ## Herramientas:
 
