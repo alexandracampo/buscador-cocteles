@@ -80,10 +80,6 @@ function buildDrinkLi(drink) {
     elementLi.setAttribute("class", "card-drink");
     elementLi.setAttribute("id", drink.idDrink);
 
-    //const elementP = document.createElement("p");
-    //elementP.textContent = drink.strCategory;
-    //elementLi.appendChild(elementP);
-
     //meto en variables ambas llamadas a las funciones
     const elementH3 = buildDrinkH3(drink.strDrink);
     const elementImg = buildDrinkImg(drink.strDrinkThumb);
