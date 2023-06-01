@@ -115,12 +115,20 @@ $color-hard: rgb(0, 0, 0);
     gap: 1rem;
     width: auto;
 
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
     .container1 {
       color: $color-hard;
       font-family: $font-family;
       border-radius: 10px;
       border: 1px solid rgb(76, 173, 157);
-      width: auto;
+      width: 50%;
+      height: 200rem;
 
       .title-list-api {
         display: flex;
@@ -138,56 +146,56 @@ $color-hard: rgb(0, 0, 0);
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-      }
 
-      .card-drink {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        margin: 1rem;
-        border: 1px solid rgb(131, 131, 131);
-        border-radius: 10px;
-        height: 16rem;
-        width: 14rem;
-
-        .item-name {
-          text-align: center;
-          font-family: $font-family;
-          width: 14rem;
-          height: 2rem;
-          font-size: 12px;
-          text-transform: uppercase;
-          letter-spacing: 0.8px;
-          font-weight: 400;
-        }
-
-        .img-drink {
-          width: 14rem;
-          height: 12rem;
-          border-top-left-radius: 10px;
-          border-top-right-radius: 10px;
-          position: relative;
-          top: -1.7rem;
+        .card-drink {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          margin: 1rem;
           border: 1px solid rgb(131, 131, 131);
-        }
+          border-radius: 10px;
+          height: 16rem;
+          width: 14rem;
 
-        .btn-delete {
-          border-radius: 50%;
-          height: 1.5rem;
-          width: 1.5rem;
-          border: none;
-          font-weight: 700;
-          position: relative;
-          left: 6rem;
-          color: white;
-          background-color: rgb(59, 161, 127);
+          .item-name {
+            text-align: center;
+            font-family: $font-family;
+            width: 14rem;
+            height: 2rem;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 400;
+          }
 
-          &:hover {
-            cursor: pointer;
-            background-color: white;
-            color: rgb(0, 0, 0);
+          .img-drink {
+            width: 14rem;
+            height: 12rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: relative;
+            top: -1.7rem;
+            border: 1px solid rgb(131, 131, 131);
+          }
+
+          .btn-delete {
+            border-radius: 50%;
+            height: 1.5rem;
+            width: 1.5rem;
+            border: none;
+            font-weight: 700;
+            position: relative;
+            left: 6rem;
+            color: white;
+            background-color: rgb(59, 161, 127);
+
+            &:hover {
+              cursor: pointer;
+              background-color: rgb(211, 29, 29);
+              color: rgb(255, 255, 255);
+            }
           }
         }
       }
@@ -214,12 +222,12 @@ $color-hard: rgb(0, 0, 0);
     }
 
     .container2 {
-      display: grid;
-      justify-content: center;
-      padding: 1rem;
+      color: $color-hard;
       font-family: $font-family;
-      background-color: rgb(168, 180, 99);
-      border-radius: 20px;
+      border-radius: 10px;
+      border: 1px solid rgb(0, 0, 0);
+      width: 50%;
+      height: 200rem;
 
       @media screen and (min-width: 1024px) {
         order: -1;
@@ -232,42 +240,65 @@ $color-hard: rgb(0, 0, 0);
         border-radius: 0.5rem;
         font-size: 1.2rem;
         margin-bottom: 1rem;
+        margin-top: 1rem;
       }
 
-      .card-drink {
+      .list-searched {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        margin: 1.5rem;
-        cursor: pointer;
+        flex-wrap: wrap;
 
-        .item-name {
+        .card-drink {
           display: flex;
-          justify-content: flex-start;
-          font-family: $font-family;
-          width: 5rem;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          margin: 1rem;
+          border: 1px solid rgb(131, 131, 131);
+          border-radius: 10px;
+          height: 16rem;
+          width: 14rem;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .item-name {
+            text-align: center;
+            font-family: $font-family;
+            width: 14rem;
+            height: 2rem;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            font-weight: 400;
+          }
+
+          .img-drink {
+            width: 14rem;
+            height: 12rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: relative;
+            top: -1.7rem;
+            border: 1px solid rgb(131, 131, 131);
+          }
         }
 
-        .img-drink {
-          width: 10rem;
-          height: 10rem;
-          border-radius: 50px 10px;
-          margin-left: 1rem;
-          margin-right: 1rem;
+        .fav-drink {
+          border: 1rem solid rgb(68, 194, 85);
+          border-radius: 20px;
+          color: rgb(0, 0, 0);
+          background-color: rgb(68, 194, 85);
         }
       }
-
-      .fav-drink {
-        border: 5px solid rgb(68, 194, 85);
-        border-radius: 20px;
-        color: rgb(68, 194, 85);
-        padding: 1rem;
+      @media screen and (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        align-items: first baseline;
       }
-    }
-    @media screen and (min-width: 1024px) {
-      grid-template-columns: 1fr 1fr;
-      align-items: first baseline;
     }
   }
 }
